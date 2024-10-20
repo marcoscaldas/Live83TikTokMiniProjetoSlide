@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Slideshow Automático</title>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="img/imagem1.jpg" alt="Slide 1" />
+      </div>
+
+      <div class="slide fade">
+        <img src="img/imagem2.jpg" alt="Slide 2" />
+      </div>
+
+      <div class="slide fade">
+        <img src="img/imagem3.jpg" alt="Slide 3" />
+      </div>
+
+      
+      <a class="prev" onclick="mudarSlide(-1)">&#10094;</a>
+      <a class="next" onclick="mudarSlide(1)">&#10095;</a>
+    </div>
+
+    <br />
+
+   
+    <div style="text-align:center">
+      <span class="ponto" onclick="irParaSlide(1)"></span>
+      <span class="ponto" onclick="irParaSlide(2)"></span>
+      <span class="ponto" onclick="irParaSlide(3)"></span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
